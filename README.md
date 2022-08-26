@@ -4,27 +4,25 @@
 |:---:|:---:|---|---|---|
 |api|/movies|Get movies|list||
 
+
+# environment varaiables
+environment variable are defined in .env but it is listed in gitignore.
+.env_backup is pushed to git repo and rename this file .env before run server 
+
 # Install
 - python version
 3.7.x  
-
 
 - install python dependencies
 ```
 pip install -r requirements.txt
 ```
 
-- environment varaiables
-environment variable are defined in .env but it is listed in gitignore.
-.env_backup is pushed to git repo and rename this file .env before run server 
-
-
 - django commands to set up project
 ```
 python manage.py migrate
 python manage.py runserver
 ```
-
 
 # Coding style
 Code is written according to the PEP8 conventions and refractored code by python black library.
@@ -39,8 +37,8 @@ python manage.py test
 
 
 # Technical solution
-- Best solution is provided in this project in order not to call ghibli API on every page load.
- There are two ways.
+Best solution is provided in this project in order not to call ghibli API on every page load.
+There are two ways.
  
  1. Background task can be created that performs sychronizatioin task which pulls data from ghibli API and store those into database every 1 min.
  Then, movies endpoint of this project never call ghibli API on every page load.
