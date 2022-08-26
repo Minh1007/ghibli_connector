@@ -6,14 +6,25 @@
 
 # Install
 - python version
-3.7.x
+3.7.x  
+
 
 - install python dependencies
+```
 pip install -r requirements.txt
+```
+
+- environment varaiables
+environment variable are defined in .env but it is listed in gitignore.
+.env_backup is pushed to git repo and rename this file .env before run server 
+
 
 - django commands to set up project
+```
 python manage.py migrate
 python manage.py runserver
+```
+
 
 # Coding style
 Code is written according to the PEP8 conventions and refractored code by python black library.
@@ -22,7 +33,9 @@ Code is written according to the PEP8 conventions and refractored code by python
 A test script is written and it has only one case now for a API to get the movies
 
 - django command to run a test 
+```
 python manage.py test
+```
 
 
 # Technical solution
