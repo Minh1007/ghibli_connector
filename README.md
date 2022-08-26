@@ -7,7 +7,8 @@
 
 # Environment varaiables
 environment variable are defined in .env but it is listed in gitignore.
-.env_backup is pushed to git repo and rename this file .env before run server 
+
+.env_backup file is pushed to git repo and rename this file .env before run server 
 
 # Install
 - python version
