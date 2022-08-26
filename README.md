@@ -57,5 +57,6 @@ There are two ways.
  Wherever production server is running (i.e on a vm or kubernetes cluster), project need to be dockerized and github CI/CD pipeline to be made to build docker image.
  And in next step, additional automated process can be added to pull docker image and set up project. 
    
-   
- 
+ # Other improvement
+ Now one API endpoint to list movies is implemented and all of hyperlinks inside api response are ghibli API itself.
+ All of these can be implemented as restful APIs.
